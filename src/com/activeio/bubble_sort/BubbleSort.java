@@ -2,6 +2,7 @@ package com.activeio.bubble_sort;
 
 public class BubbleSort {
     private static int[] sort(int[] a) {
+        int[] v = a.clone();
         int n = a.length;
         boolean swapped;
 
@@ -9,20 +10,19 @@ public class BubbleSort {
             swapped = false;
 
             for (int i = 1; i <= n - 1; i++) {
-                if (a[i - 1] > a[i]) {
-                    int b = a[i - 1];
-                    int c = a[i];
+                if (v[i - 1] > v[i]) {
+                    int b = v[i - 1];
+                    int c = v[i];
 
-                    a[i - 1] = c;
-                    a[i] = b;
+                    v[i - 1] = c;
+                    v[i] = b;
 
                     swapped = true;
                 }
             }
+        } while(swapped); // run until nothing was changed
 
-        } while(swapped);
-
-        return a;
+        return v;
     }
 
     public static void main(String[] args) {

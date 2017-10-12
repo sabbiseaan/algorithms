@@ -9,28 +9,22 @@ public class MergeSort {
             return v;
         }
 
-        List<Integer> left = new ArrayList<>();
-        List<Integer> right = new ArrayList<>();
+        int countLeft = v.size() / 2;
 
-        for (int i = 0; i < v.size(); i++) {
-            if (i < v.size() / 2) {
-                left.add(v.get(i));
-            } else {
-                right.add(v.get(i));
-            }
-        }
+        // split into two lists, left and right
+        List<Integer> left = v.subList(0, countLeft);
+        List<Integer> right = v.subList(countLeft, v.size());
 
         left = sort(left);
         right = sort(right);
 
-
-        //
         return merge(left, right);
     }
 
     private static List<Integer> merge(List<Integer> left, List<Integer> right) {
         List<Integer> result = new ArrayList<>();
 
+        // consume the same amount of elements from both left and right, if one is longer, it will be handled below
         while (left.size() > 0 && right.size() > 0) {
             if (left.get(0) <= right.get(0)) {
                 result.add(left.get(0));

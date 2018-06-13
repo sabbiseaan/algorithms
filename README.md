@@ -10,4 +10,4 @@ Contains algorithms and data structures implemented in Java for educational purp
 
 ## data structures
 
-* [AVL Tree](src/com.activeio/search/avl_tree)
+* [AVL Tree](src/com/activeio/search/avl_tree)

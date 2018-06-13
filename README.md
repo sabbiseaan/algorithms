@@ -4,10 +4,10 @@ Contains algorithms and data structures implemented in Java for educational purp
 
 ## algorithms
 
-* [bubble sort](tree/master/src/com/activeio/sort/bubble_sort)
-* [merge sort](tree/master/src/com/activeio/sort/merge_sort)
-* [quick sort](tree/master/src/com/activeio/sort/quick_sort)
+* [bubble sort](src/com/activeio/sort/bubble_sort)
+* [merge sort](src/com/activeio/sort/merge_sort)
+* [quick sort](src/com/activeio/sort/quick_sort)
 
 ## data structures
 
-* [AVL Tree](tree/master/src/com.activeio/search/avl_tree)
+* [AVL Tree](src/com.activeio/search/avl_tree)

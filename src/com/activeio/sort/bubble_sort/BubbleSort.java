@@ -1,4 +1,4 @@
-package com.activeio.bubble_sort;
+package com.activeio.sort.bubble_sort;
 
 public class BubbleSort {
     private static int[] sort(int[] a) {

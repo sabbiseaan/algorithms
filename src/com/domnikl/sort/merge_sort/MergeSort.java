@@ -1,4 +1,4 @@
-package com.activeio.sort.merge_sort;
+package com.domnikl.sort.merge_sort;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.activeio.sort.quick_sort;
+package com.domnikl.sort.quick_sort;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.activeio.search.avl_tree;
+package com.domnikl.search.avl_tree;
 
 class AVLTree<T> {
     Node root;
